@@ -1,10 +1,6 @@
 # del keyword
 # Used to delete object properties or object itself.
 
-from numpy import real
-from sklearn.feature_extraction import img_to_graph
-
-
 class Student:
     def __init__(self, name):
         self.name = name
@@ -172,5 +168,69 @@ num2.showNumber()
 # num3 = num1 + num2 # <-- with __add__ function
 # num3.showNumber()
 
-num3 = num1 - num2 # <-- with __add__ function
-num3.showNumber()
+# num3 = num1 - num2 # <-- with __add__ function
+# num3.showNumber()
+
+# _____________________________________________________________________
+# Let's Practice
+# Q4] 
+# Define a circle class to create a circle with radius r using the constructor.
+# Defien an Area() method of the class which calculates the area of the circle.
+# Define a Perimeter() method of the class which allows you to calculate the perimeter of the circle.
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):
+        return 3.14 * self.radius ** 2
+    
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+
+# circle = Circle(2)
+# print('circle.radius():', circle.area())
+# print('circle.perimeter():', circle.perimeter())
+
+
+# Q5] 
+# Define a Employee class with attributes role, department & salary. This class includes
+# showDetails() method
+# Create an Engineer class inherits properties from Employee and has additional attributes: name and age 
+
+class Employee:
+    def __init__(self, role, department, salary):
+        self.role = role
+        self.department = department
+        self.salary = salary
+    
+    def showDetails(self):
+        print("role:", self.role)
+        print("department:", self.department)
+        print("salary:", self.salary)
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Engineer", "IT", "75000")
+
+# engg1 = Engineer("Amol SB", "40")
+# engg1.showDetails()
+
+# Q5] Create a class Order which store items and its price.
+# Use Dunder function __gt_() to convey that:
+# order1 > order2 if price of order1 > price of order2
+
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+    
+    def __gt__(self, ordr2):
+        return self.price > ordr2.price
+
+ordr1 = Order("chips", 20)
+ordr2 = Order("tea", 50)
+
+print(ordr1 > ordr2)
