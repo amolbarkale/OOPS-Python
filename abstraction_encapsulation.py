@@ -7,7 +7,7 @@ class Students:
     def __init__(self, name, marks): # obj attr > class attr
         self.name = name
         self.marks = marks
-        # print('self:', self)
+        print('self:', self)
 
     def welcome(self):
         print('Welcome -', self.name)
@@ -20,10 +20,10 @@ s1 = Students("Amol S Barkale", 97)
 
 s2 = Students("Amol", 79)
 
-# print('s1:', s1.name)
-# print('s2:', s2.name)
-# print('Students:', Students.college)
-# print('Method:', s1.welcome())
+print('s1:', s1.name)
+print('s2:', s2.name)
+print('Students:', Students.college)
+print('Method:', s1.welcome())
 
 #  _____________________________________________________________________
 
@@ -50,12 +50,12 @@ student = Student("AmolSB", [35,36,37])
 
 student.calculate_average()
 
-# print('student.name:', student.name)
+print('student.name:', student.name)
 
 student.name = "Nakul"
 
-# print('student.name:', student.name)
-# student.hello()
+print('student.name:', student.name)
+student.hello()
 
 #  _____________________________________________________________________
 class Car:
@@ -69,8 +69,8 @@ class Car:
         self.acc = True
         print('car started...')
 
-# car1 = Car()
-# car1.start()
+car1 = Car()
+car1.start()
 
 #  _____________________________________________________________________
 
