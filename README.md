@@ -41,7 +41,7 @@ Hiding the implementation details of a class only showing the essential feature 
 ## Encapsulation - 
 Wrapping data and funfciotns into a single unit (Object)
 
-## del keyword
+## `del` keyword
 Used to delete object properties or object itself.
 
 ## Private(like) attributes and methods
