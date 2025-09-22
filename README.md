@@ -79,6 +79,7 @@ When the same operator is allowed to have different meaning according to the con
  - Ek hi cheez ko alg alg tariko se use kiya ja sake toh that comes in the Polymorphism
 
 ## Operators & Dunder functions  
+double underscore functions in python 
 
 | Operator | Description      | Dunder Function    |
 |----------|------------------|--------------------|
