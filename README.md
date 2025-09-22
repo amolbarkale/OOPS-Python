@@ -88,3 +88,5 @@ double underscore functions in python
 | `a * b`  | #multiplication  | `a.__mul__(b)`     |
 | `a / b`  | #division        | `a.__truediv__(b)` |
 | `a % b`  | #addition        | `a.__mod__(b)`     |
+
+Apna college Python notes - https://drive.google.com/drive/folders/1LahwPSc6f9nkxBiRrz6LFUzkrg-Kzvov
